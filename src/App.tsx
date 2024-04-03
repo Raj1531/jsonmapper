@@ -20,7 +20,6 @@ function App() {
   const texthandler = (event: any) => {
     // alert(event.target.id + "." + event.target.innerText);
     let mapValue = event.target.id + "." + event.target.innerText;
-
     let previousSelect = event.target.innerText.split("-");
 
     if (previousSelect.length === 1) {

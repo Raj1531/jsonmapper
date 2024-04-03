@@ -1,0 +1,74 @@
+.main{
+  display: grid;
+  place-items: center;
+  height: 100px;
+  width: 100px;
+  top: 10px;
+  left: 10px;
+}
+
+.container {
+  position: relative;
+  border: 1px solid black;
+  height: 400px;
+  width: 600px;
+  overflow: hidden;
+  top: 50px;
+  left: 100px;
+}
+
+.box {
+
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: hotpink;
+  height: 24px;
+  width: 124px;
+}
+
+ul {
+    list-style: none;
+    line-height: 2em;
+}
+
+ul summary{
+    cursor: pointer;
+}
+
+ul summary::marker{display: none;}
+
+ul summary::-webkit-details-marker
+{
+    display: none;
+}
+
+ul li{
+    position: relative;
+
+}
+
+ul li::before{
+    position: absolute;
+    left: -10px;
+    top: 0px;
+    border-left: 2px solid red;
+    border-bottom: 2px solid blue;
+    content: "";
+    height: 1em;
+    width: 9px;
+}
+
+ul li::after{
+    position: absolute;
+    left: -10px;
+    top: 0px;
+    border-left: 2px solid red;
+    content: "";
+    height: 100%;
+}
+
+ul li:last-child::after{
+    display: none;
+}
